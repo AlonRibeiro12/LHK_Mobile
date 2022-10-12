@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import {  Image, FlatList } from 'react-native';
+import { Image, FlatList } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 
@@ -17,7 +17,7 @@ function Home() {
 
   useEffect(() => {
     const getGames = async () => {
-      const response = await fetch('http://10.0.0.208:3333/games/');
+      const response = await fetch('http://10.0.2.15:3333/games/');
       const data = await response.json();
       setGames(data);
     };

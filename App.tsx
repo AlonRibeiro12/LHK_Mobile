@@ -38,7 +38,7 @@ export default function App() {
     });
 
     responseNotificationListener.current = Notification.addNotificationResponseReceivedListener(response => {
-      console.log(response)
+
     });
 
     return () => {
@@ -53,7 +53,7 @@ export default function App() {
     <Background>
       <StatusBar barStyle="light-content" backgroundColor="transparent" translucent />
 
-      { fontsLoaded ? <Routes /> : <Loading /> }
+      {fontsLoaded ? <Routes /> : <Loading />}
 
     </Background>
   );

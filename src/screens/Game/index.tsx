@@ -35,7 +35,7 @@ function Game() {
     const getGames = async () => {
       const response = await fetch(`http://10.0.0.208:3333/games/${game.id}/ads`);
       const data = await response.json();
-      setDuos(data);
+      console.log(data);
     };
 
     getGames();
